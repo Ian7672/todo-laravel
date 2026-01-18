@@ -1,0 +1,124 @@
+        :root {
+  /* Import the main theme variables */
+  --primary: #6366f1;
+  --primary-hover: #4f46e5;
+  --background: #f3f4f6;
+  --surface: #ffffff;
+  --text: #1f2937;
+  --border: #e5e7eb;
+  --danger: #ef4444;
+  
+  /* Specific for sign-in page */
+  --page-bg: #7F8CAA;
+  
+  /* Spacing */
+  --spacing-xs: 0.5rem;
+  --spacing-sm: 0.75rem;
+  --spacing-md: 1rem;
+  --spacing-lg: 1.5rem;
+  --spacing-xl: 2rem;
+  --spacing-xxl: 2.5rem;
+  
+  /* Border radius */
+  --radius-sm: 0.375rem;
+  --radius-md: 0.5rem;
+  --radius-lg: 0.75rem;
+  --radius-xl: 1rem;
+  --radius-xxl: 1.5rem;
+  --radius-full: 9999px;
+  
+  /* Shadows */
+  --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+  --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  
+  /* Typography */
+  --font-family: 'Inter', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  --font-size-xs: 0.75rem;
+  --font-size-sm: 0.875rem;
+  --font-size-base: 1rem;
+  --font-size-md: 1.125rem;
+  --font-size-lg: 1.25rem;
+  --font-size-xl: 1.5rem;
+  --font-size-2xl: 1.875rem;
+  --font-size-3xl: 2.25rem;
+  --font-weight-normal: 400;
+  --font-weight-medium: 500;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
+}
+        body {
+            margin: 0;
+            font-family: var(--font-family);
+            background-color: var(--page-bg);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            color: var(--text);
+        }
+        .form-container {
+            background: var(--surface);
+            padding: var(--spacing-xl);
+            border-radius: var(--radius-lg);
+            box-shadow: var(--shadow-lg);
+            width: 100%;
+            max-width: 400px;
+        }
+        input {
+            width: 100%;
+            padding: var(--spacing-sm);
+            margin-top: var(--spacing-xs);
+            border: 1px solid var(--border);
+            border-radius: var(--radius-sm);
+            background-color: var(--surface);
+            color: var(--text);
+        }
+        button {
+            width: 100%;
+            padding: var(--spacing-sm);
+            margin-top: var(--spacing-xs);
+            background-color: var(--primary);
+            color: white;
+            border: none;
+            border-radius: var(--radius-sm);
+            cursor: pointer;
+            transition: background-color 0.3s;
+            font-weight: var(--font-weight-semibold);
+        }
+        button:hover {
+            background-color: var(--primary-hover);
+        }
+        .error {
+            color: var(--danger);
+            font-size: calc(var(--font-size-base) * 0.9);
+            margin-top: var(--spacing-xs);
+        }
+        .link {
+            margin-top: var(--spacing-md);
+            display: block;
+            text-align: center;
+            color: var(--primary);
+            text-decoration: none;
+            font-weight: var(--font-weight-medium);
+        }
+        .link:hover {
+            text-decoration: underline;
+        }
+        
+        /* Responsive Design */
+        @media (max-width: 480px) {
+            body {
+                padding: var(--spacing-md);
+            }
+            
+            .form-container {
+                padding: var(--spacing-lg);
+                margin: var(--spacing-sm);
+            }
+            
+            input, button {
+                padding: var(--spacing-sm);
+                margin-top: var(--spacing-xs);
+            }
+        }
