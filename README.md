@@ -82,6 +82,13 @@ This project is open source and available under the GNU General Public License v
 
 ## Screenshots
 
-![Todo Application Screenshot](screenshots/app-screenshot.png)
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/d9c2d36e-92f2-483f-b931-ff955f07cfc0" width="49%" alt="Dashboard" />
+  <img src="https://github.com/user-attachments/assets/1728da2a-8944-443e-983c-1431fca151c8" width="49%" alt="Auth / Login" />
+</p>
 
-*Note: Add actual screenshots to the screenshots folder to visualize the application.*
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/25cb3efe-e66f-4c0c-ba6a-d7624cf51396" width="49%" alt="Create / Edit Task Modal" />
+  <img src="https://github.com/user-attachments/assets/624a4433-0d7e-49c6-8777-628efd76d2c7" width="49%" alt="Task List / Filtering" />
+</p>
+
